@@ -13,16 +13,19 @@
           <a href="" class="nav-branding"><em>Mars</em>Modus</a>
           <ul class="nav-menu">
             <li class="nav-item"></li>
-                <a href="#" class="nav-link">ABOUT</a>
+                <a href="" class="nav-link home-link">HOME</a>
             </li>
             <li class="nav-item"></li>
-                <a href="#" class="nav-link">SKILLS</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item"></li>
+                <a href="#skills" class="nav-link">SKILLS</a>
              </li>
              <li class="nav-item"></li>
-                <a href="#" class="nav-link">WORK</a>
+                <a href="#projects" class="nav-link">WORK</a>
             </li>
             <li class="nav-item"></li>
-                <a href="#" class="nav-link">CONTACT</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
             </li>
           </ul>
           <div class="hamburger">
@@ -41,8 +44,8 @@
            A website can speak volumes about you and your business.
             I am here to help!</h3>
         <div class="btn-nav">
-          <button>WORK</button>
-          <button>SKILLS</button>
+          <a class="btn" href="#skills">SKILLS</a>
+          <a class="btn" href="#projects">WORK</a>
         </div>
 
       </section>
@@ -54,18 +57,23 @@
             I love every aspect of it and have never been as passionate 
             about anything.</h3>
           <h3>Taking every opportunity I had to work with other devolopers right from the beginning,
-            mainly worked with CMS as a Content Admnistrator, using Wordpress and Joomla. 
+            I mainly worked with CMS as a Content Admnistrator, using Wordpress and Joomla. 
             Eventually, I applied what I learned and created my first websites 
             from scratch.</h3>
-          <h3>Three years have passed since I started this wonderful journey. I have completed online courses and bootcamps, offline seminars to network and I have been through tutorial hell. I now 
-            wish to join a team of developers and work in a higher paced enviroment.</h3>  
+          <h3>Three years have passed since I started this wonderful journey. I have completed online courses and bootcamps,
+             offline seminars for networking and I have been through tutorial hell. I would love to join a team of developers
+              and work on bigger projects in a higher paced enviroment.</h3>  
           <h3>Web development is ever evolving, 
           with innovations around every corner,
           therefore a web developer is always learning 
           and adapting. Complementing each skill with the 
           right tools, striving to achieve the best results, I can't wait to tackle the next challenge.</h3>
         
-          <button>Download CV</button>
+          <div class="btn-nav">
+            <h3>Download my CV</h3>
+            <button class="btn">CV [EN]</button>
+            <button class="btn">CV [GR]</button>
+          </div>
       </section>
       <section id="skills" class="flex-c-r">
         
@@ -131,7 +139,7 @@
         </div>
         
         <div class="btn-nav">
-          <button>CONTACT ME</button>
+          <a class="btn" href="#contact">CONTACT</a>
         </div>
 
     </section>
@@ -189,13 +197,26 @@
 
       </div>
     <div class="btn-nav">
-          <button>ABOUT</button>
-          <button>CONTACT</button>
+      <a class="btn" href="#skills">SKILLS</a>
+      <a class="btn" href="#projects">WORK</a>
     </div>
     </section>
     <section id="contact" class="flex-c-r">
-      <h1>How you can <br><span>CONTACT ME</span>
-    </section></h1>
+      <h1>How you can <br><span>CONTACT ME</span></h1>
+        
+        <div id="contact-form">
+          <h2>Email</h2>
+          <form 
+          action="https://formspree.io/f/mqknkpdw"
+          method="POST"
+          >
+            <input type="email" name="_replyto" placeholder="Your email">
+            <textarea name="message" placeholder="Type your message"></textarea>
+
+            <button class="btn" type="submit">Send</button>
+          </form>
+        </div>
+    </section>
     </main>
 	<script src="scripts.js"></script>
   </body>
