@@ -35,10 +35,12 @@ body::-webkit-scrollbar-thumb {
 section{
     min-height: 100vh;
     color: var(--green);
-    padding: 7em 0 3em 0;
+    padding: 5em 0 3em 0;
     border-bottom: 2px groove var(--green);
 }
-
+.btn-nav{
+    margin-top:1em;
+}
 .btn {
     display: inline-block;
     color: var(--green);
@@ -109,6 +111,7 @@ a{
     align-items: center;
     padding: 0 3em;
     position: fixed;
+    border-bottom: 1px inset var(--blue);
 }
 
 .nav-menu{
@@ -154,9 +157,11 @@ a{
     width:13em;
     height: 13em;
     border-radius: 50%;
-    margin:1em;
+    margin:0 0 1em 0;
 }
-
+#greeting h1{
+    margin-bottom: 1em;
+}
 /*Styles for GREETING/landing page END*/
 
 /*Styles for SKILLS section START*/
@@ -175,7 +180,7 @@ a{
     list-style-type: square;
 }
 #skills li{
-    font-size: large;
+    font-size: 1em;
     line-height: 1.6;
 }
 .skillset-container{
@@ -223,8 +228,7 @@ span.project-title h2{
     padding:.5em;
 }
 .project-display img{
-    max-width: 80vw;
-    max-height: 70vh;
+    width: 100%;
 }
 .project-info h3{
     padding: 0 .5em;
@@ -292,11 +296,18 @@ form .btn{
     margin:0;
 }
 
-
+@media(min-width:1300px){
+    section{
+        padding: 6em 0 3em 0; 
+    }
+}
 
 @media(min-width:1600px){
-    main{
+    body{
         font-size: 20px;
+    }
+    section{
+        padding: 7em 0 3em 0; 
     }
     #greeting img{
         width:15em;
@@ -305,7 +316,7 @@ form .btn{
 }
 
 @media(min-width:2000px){
-    main{
+    body{
         font-size: 30px;
     }
     #greeting img{
@@ -385,9 +396,15 @@ form .btn{
         padding:4em 1em 2em 1em;
         
     }
+    #greeting h1{
+        margin-top: 1.3em;
+    }
     .flex-c-r h3{
         max-width: 90vw;
         margin:1em 1em;
+    }
+    .project-info h3{
+        margin:0;
     }
     .skillset-container{
         margin:2em 1em;
