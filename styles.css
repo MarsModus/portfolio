@@ -154,9 +154,10 @@ a{
 
 /*Styles for GREETING/landing page START*/
 #greeting img{
-    width:13em;
-    height: 13em;
+    width:15em;
+    height: auto;
     border-radius: 50%;
+    border: 3px solid var(--green);
     margin:0 0 1em 0;
 }
 #greeting h1{
@@ -260,6 +261,25 @@ a.project-link:hover{
 section#contact{
     min-height: 40vh;
 }
+.com-links a{
+    margin:0 .7em;
+}
+.com-links img{
+    width:4em;
+    height: 4em;
+    padding:.3em;
+    border-radius: 50%;
+    background-color: rgb(240, 255, 240, 0);
+    transition: .4s ease;
+}
+
+.com-links img:hover{
+    background-color: rgb(240, 255, 240, 1);
+}
+.com-links img:active{
+    background-color: rgb(240, 255, 240, 1);
+}
+
 #contact-form{
     display: flex;
     flex-direction: column;
@@ -295,7 +315,21 @@ textarea{
 form .btn{
     margin:0;
 }
+/*Styles for CONTACT section END*/
 
+/*Styles for Footer START*/
+footer{
+    height:7vh;
+    background-color: var(--green);
+    color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-weight: bolder;
+    font-size: 1em;
+}
 
 @media(min-width:1600px){
     body{
